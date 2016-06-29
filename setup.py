@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
+import codecs
 import os
 import re
 
@@ -17,7 +18,7 @@ def get_version(package):
 version = get_version('oauth2_provider')
 
 
-LONG_DESCRIPTION = open('README.rst').read()
+LONG_DESCRIPTION = codecs.open('README.rst', 'r', 'utf-8').read()
 
 setup(
     name="django-oauth-toolkit",
